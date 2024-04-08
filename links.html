@@ -1,0 +1,74 @@
+<html lang="en">
+
+<head> 
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>yukzo.links</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+
+<body>
+
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="links.html">Links</a>
+        <a href="logs.html">Logs</a>
+      </nav>
+<!-- Pfp-->
+
+<img 
+class="profile-pic"
+src="img/yukzo2.png">
+
+
+<!-- name and text-->
+
+<div class="name">yukzo.xyz</div>
+
+<!-- rgb-->
+
+<!-- links-->
+
+<a href="https://steamcommunity.com/id/yukzo" class="links">Steam</a>
+
+<a href="https://discord.gg/xMXcX7XChf" class="links">Discord</a>
+
+<a href="https://purpleside.fr" class="links">Purple Side</a>
+
+<a href="https://www.youtube.com/channel/UCKwf8ISMN6xQbpu5YCnKH6g" class="links">YouTube</a>
+
+<a href="https://github.com/Yukzo" class="links">GitHub</a>
+
+
+<!--sfx-->
+<audio id="hoverA" preload="auto"> <source src="sfx/hover.mp3" type="audio/mpeg"></source> Your browser isn't invited for super fun audio time. </audio>
+
+<script>
+    $(document).ready(function() {
+        function playHoverSound() {
+            var hoverA = document.getElementById("hoverA");
+            hoverA.currentTime = 0; 
+            hoverA.play();
+        }
+        $("a").hover(function() {
+            playHoverSound();
+        });
+
+        $("nav a").hover(function() {
+            playHoverSound();
+        });
+
+        
+    });
+    </script>
+   
+
+
+
+
+
+</body>
+</html>

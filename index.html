@@ -1,0 +1,83 @@
+<html lang="en">
+
+<head> 
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>yukzo.website</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+
+<body>
+<!--nav-->
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="links.html">Links</a>
+        <a href="logs.html">Logs</a>
+    </nav>
+
+<!--pfp-->
+<img class="profile-pic"src="img/yukzo2.png">
+
+
+
+<div class="back-text">
+    <span>Y</span>
+    <span>U</span>
+    <span>K</span>
+    <span>Z</span>
+    <span>O</span>
+    <span>.</span>
+    <span>X</span>
+    <span>Y</span>
+    <span>Z</span>
+</div>
+
+<div class="text"><br><br><br>I play CS2, SCP:SL and some other random stuff,<br> I code sometimes. Navigate through the website with the buttons on the top left.</div>
+
+
+<!--sfx-->
+<audio id="hoverA" preload="auto"> <source src="sfx/hover.mp3" type="audio/mpeg"></source> Your browser isn't invited for super fun audio time. </audio>
+
+<script>
+    $(document).ready(function() {
+        function playHoverSound() {
+            var hoverA = document.getElementById("hoverA");
+            hoverA.currentTime = 0; 
+            hoverA.play();
+        }
+        $("nav a").hover(function() {
+            playHoverSound();
+        });
+    });
+    </script>
+ 
+ <!--spotify-->
+<div class="spotify"><br><br><br><br><br><br><br><br><br><iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/3KBsdO1rkM9O0QASfvoA38?utm_source=generator"  width="30%" height="100" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy" ></iframe></div>
+<div class="spotify"><iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/66ttdhLCg7CXzJmfDFVLnM?utm_source=generator"  width="30%" height="100" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy" ></iframe></div>
+<div class="spotify2"><iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/2gLalMkbrFz6VkAgYORIQp?utm_source=generator" width="30%" height="100" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe></div>
+
+
+<!--ko-fi-->
+   <script src='https://storage.ko-fi.com/cdn/scripts/overlay-widget.js'></script>
+   <script>
+       kofiWidgetOverlay.draw('yukzo', {
+           'type': 'floating-chat',
+           'floating-chat.donateButton.text': 'Support Me',
+           'floating-chat.donateButton.background-color': '#8a2be2',
+           'floating-chat.donateButton.text-color': '#ffff'
+       });
+   </script>
+<!--backtext-->
+<script>
+    let spanTexts = document.getElementsByTagName("span");
+    window.onload = function(){
+    for (spanText of spanTexts){
+    spanText. classList.add("active");}}
+    </script>
+
+
+
+</body>
+</html>

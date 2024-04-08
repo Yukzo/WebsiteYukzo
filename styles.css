@@ -94,8 +94,8 @@ body {
   }
 
   .spotify2 {
-    max-width: 76%;
-    margin-left: auto;
+    max-width: 60%;
+    margin-left: 12%;
     margin-right: auto;
   }
 
@@ -111,12 +111,46 @@ body {
 
 .text {
 
-    color: #8f00eb;
     text-align: center;
-    padding: 30px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 40px;
     font-size: 30px;
+    padding: 30px;
+    color: white;
+    text-decoration: none;
+    position: relative;
+    overflow: hidden;
+    animation: fadeIn 5s;
 
 }
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+
+  .textlog {
+
+    text-align: left;
+    margin-left: auto;
+    margin-right: 5%;
+    font-size: 30px;
+    padding: 30px;
+    color: white;
+    text-decoration: none;
+    position: relative;
+    overflow: hidden;
+    animation: fadeIn 5s;
+
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  
 
 .links {
     text-align: center;
